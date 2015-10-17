@@ -115,7 +115,6 @@ class AudioEnginePlayer: NSObject {
             // Prepare AVAudioFile
             let url = NSURL(string: NSBundle.mainBundle().pathForResource("sample", ofType: "mp3")!)
             audioFile = try AVAudioFile(forReading: url!)
-            print(audioFile.fileFormat.sampleRate)
 
             // Prepare AVAudioPlayerNode
             audioPlayerNode = AVAudioPlayerNode()
