@@ -14,9 +14,9 @@
 		FE2541501BD22BDE00408614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE25414E1BD22BDE00408614 /* LaunchScreen.storyboard */; };
 		FE25415A1BD22D3D00408614 /* AudioEnginePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2541591BD22D3D00408614 /* AudioEnginePlayer.swift */; settings = {ASSET_TAGS = (); }; };
 		FE25415C1BD231A500408614 /* AudioUnitVarispeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25415B1BD231A500408614 /* AudioUnitVarispeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FEFA6E701BD2617900A76B35 /* AudioUnitDelay ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E6F1BD2617900A76B35 /* AudioUnitDelay ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FEFA6E701BD2617900A76B35 /* AudioUnitDelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E6F1BD2617900A76B35 /* AudioUnitDelayViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		FEFA6E761BD2721800A76B35 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEFA6E751BD2721800A76B35 /* sample.mp3 */; settings = {ASSET_TAGS = (); }; };
-		FEFA6E781BD2739900A76B35 /* AudioUnitDistortion ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E771BD2739900A76B35 /* AudioUnitDistortion ViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FEFA6E781BD2739900A76B35 /* AudioUnitDistortionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E771BD2739900A76B35 /* AudioUnitDistortionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		FE2541511BD22BDE00408614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE2541591BD22D3D00408614 /* AudioEnginePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEnginePlayer.swift; sourceTree = "<group>"; };
 		FE25415B1BD231A500408614 /* AudioUnitVarispeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUnitVarispeedViewController.swift; sourceTree = "<group>"; };
-		FEFA6E6F1BD2617900A76B35 /* AudioUnitDelay ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AudioUnitDelay ViewController.swift"; sourceTree = "<group>"; };
+		FEFA6E6F1BD2617900A76B35 /* AudioUnitDelayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUnitDelayViewController.swift; sourceTree = "<group>"; };
 		FEFA6E751BD2721800A76B35 /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
-		FEFA6E771BD2739900A76B35 /* AudioUnitDistortion ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AudioUnitDistortion ViewController.swift"; sourceTree = "<group>"; };
+		FEFA6E771BD2739900A76B35 /* AudioUnitDistortionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioUnitDistortionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +68,8 @@
 				FE2541591BD22D3D00408614 /* AudioEnginePlayer.swift */,
 				FE2541451BD22BDE00408614 /* AudioUnitTimePitchViewController.swift */,
 				FE25415B1BD231A500408614 /* AudioUnitVarispeedViewController.swift */,
-				FEFA6E6F1BD2617900A76B35 /* AudioUnitDelay ViewController.swift */,
-				FEFA6E771BD2739900A76B35 /* AudioUnitDistortion ViewController.swift */,
+				FEFA6E6F1BD2617900A76B35 /* AudioUnitDelayViewController.swift */,
+				FEFA6E771BD2739900A76B35 /* AudioUnitDistortionViewController.swift */,
 				FE2541491BD22BDE00408614 /* Main.storyboard */,
 				FE25414C1BD22BDE00408614 /* Assets.xcassets */,
 				FE25414E1BD22BDE00408614 /* LaunchScreen.storyboard */,
@@ -153,8 +153,8 @@
 				FE25415C1BD231A500408614 /* AudioUnitVarispeedViewController.swift in Sources */,
 				FE2541441BD22BDE00408614 /* AppDelegate.swift in Sources */,
 				FE2541461BD22BDE00408614 /* AudioUnitTimePitchViewController.swift in Sources */,
-				FEFA6E781BD2739900A76B35 /* AudioUnitDistortion ViewController.swift in Sources */,
-				FEFA6E701BD2617900A76B35 /* AudioUnitDelay ViewController.swift in Sources */,
+				FEFA6E781BD2739900A76B35 /* AudioUnitDistortionViewController.swift in Sources */,
+				FEFA6E701BD2617900A76B35 /* AudioUnitDelayViewController.swift in Sources */,
 				FE25415A1BD22D3D00408614 /* AudioEnginePlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
