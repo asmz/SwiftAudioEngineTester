@@ -146,13 +146,14 @@ class AudioEnginePlayer: NSObject {
             audioEngine.connect(audioUnitDistortion, to: audioEngine.mainMixerNode, format: audioFile.processingFormat)
 
             // Start Engine
-            try audioEngine.start()
+            audioEngine.prepare()
         } catch {
             print("AudioEnginePlayer initialize error.")
         }
     }
 
     func play() {
+        try! audioEngine.start()
         audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: {
             self.play()
         });
@@ -160,11 +161,7 @@ class AudioEnginePlayer: NSObject {
     }
 
     func pause() {
+        audioEngine.pause()
         audioPlayerNode.pause()
     }
-
-    func stop() {
-        audioPlayerNode.stop()
-    }
-
 }
