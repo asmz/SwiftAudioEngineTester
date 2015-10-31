@@ -64,17 +64,17 @@ class AudioUnitTimePitchViewController: UIViewController {
     }
 
     @IBAction func changeAudioUnitTimePitchOverlap() {
-        player.audioUnitTimePitchOverlap = audioUnitTimePitchOverlapSlider.value
+        player.audioUnitTimePitch.overlap = audioUnitTimePitchOverlapSlider.value
         audioUnitTimePitchOverlapLabel.text = String(format: "%.1f", audioUnitTimePitchOverlapSlider.value)
     }
 
     @IBAction func changeAudioUnitTimePitchPitch() {
-        player.audioUnitTimePitchPitch = audioUnitTimePitchPitchSlider.value
+        player.audioUnitTimePitch.pitch = audioUnitTimePitchPitchSlider.value
         audioUnitTimePitchPitchLabel.text = String(format: "%.1f", audioUnitTimePitchPitchSlider.value)
     }
 
     @IBAction func changeAudioUnitTimePitchRate() {
-        player.audioUnitTimePitchRate = audioUnitTimePitchRateSlider.value
+        player.audioUnitTimePitch.rate = audioUnitTimePitchRateSlider.value
         audioUnitTimePitchRateLabel.text = String(format: "%.1f", audioUnitTimePitchRateSlider.value)
     }
 }

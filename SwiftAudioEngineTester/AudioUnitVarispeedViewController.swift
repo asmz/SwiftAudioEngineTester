@@ -56,7 +56,7 @@ class AudioUnitVarispeedViewController: UIViewController {
     }
 
     @IBAction func chahgeAudioUnitVarispeedRate() {
-        player.audioUnitVarispeedRate = audioUnitVarispeedRateSlider.value
+        player.audioUnitVarispeed.rate = audioUnitVarispeedRateSlider.value
         audioUnitVarispeedRateLabel.text = String(format: "%.1f", audioUnitVarispeedRateSlider.value)
     }
 }

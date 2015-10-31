@@ -60,12 +60,12 @@ class AudioUnitDistortionViewController: UIViewController {
     }
 
     @IBAction func chahgeAudioUnitDistortionPreGain() {
-        player.audioUnitDistortionPreGain = audioUnitDistortionPreGainSlider.value
+        player.audioUnitDistortion.preGain = audioUnitDistortionPreGainSlider.value
         audioUnitDistortionPreGainLabel.text = String(format: "%.1f", audioUnitDistortionPreGainSlider.value)
     }
 
     @IBAction func chahgeAudioUnitDistortionWetDryMix() {
-        player.audioUnitDistortionWetDryMix = audioUnitDistortionWetDryMixSlider.value
+        player.audioUnitDistortion.wetDryMix = audioUnitDistortionWetDryMixSlider.value
         audioUnitDistortionWetDryMixLabel.text = String(format: "%.1f", audioUnitDistortionWetDryMixSlider.value)
     }
 }

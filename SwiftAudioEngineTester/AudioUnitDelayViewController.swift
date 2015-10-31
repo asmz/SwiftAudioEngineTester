@@ -68,22 +68,22 @@ class AudioUnitDelayViewController: UIViewController {
     }
 
     @IBAction func chahgeAudioUnitDelayDelayTime() {
-        player.audioUnitDelayDelayTime = Double(audioUnitDelayDelayTimeSlider.value)
+        player.audioUnitDelay.delayTime = Double(audioUnitDelayDelayTimeSlider.value)
         audioUnitDelayDelayTimeLabel.text = String(format: "%.1f", audioUnitDelayDelayTimeSlider.value)
     }
 
     @IBAction func chahgeAudioUnitDelayFeedback() {
-        player.audioUnitDelayFeedback = audioUnitDelayFeedbackSlider.value
+        player.audioUnitDelay.feedback = audioUnitDelayFeedbackSlider.value
         audioUnitDelayFeedbackLabel.text = String(format: "%.1f", audioUnitDelayFeedbackSlider.value)
     }
 
     @IBAction func chahgeAudioUnitDelayLowPassCutoff() {
-        player.audioUnitDelayLowPassCutoff = audioUnitDelayLowPassCutoffSlider.value
+        player.audioUnitDelay.lowPassCutoff = audioUnitDelayLowPassCutoffSlider.value
         audioUnitDelayLowPassCutoffLabel.text = String(format: "%.1f", audioUnitDelayLowPassCutoffSlider.value)
     }
 
     @IBAction func chahgeAudioUnitDelayWetDryMix() {
-        player.audioUnitDelayWetDryMix = audioUnitDelayWetDryMixSlider.value
+        player.audioUnitDelay.wetDryMix = audioUnitDelayWetDryMixSlider.value
         audioUnitDelayWetDryMixLabel.text = String(format: "%.1f", audioUnitDelayWetDryMixSlider.value)
     }
 }
