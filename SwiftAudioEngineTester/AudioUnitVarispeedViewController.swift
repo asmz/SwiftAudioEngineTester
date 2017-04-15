@@ -22,7 +22,7 @@ class AudioUnitVarispeedViewController: UIViewController {
         resetDefaultValue()
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateView()
     }
@@ -34,9 +34,9 @@ class AudioUnitVarispeedViewController: UIViewController {
 
     func updateView() {
         if player.playing {
-            PlayPauseButton.setTitle("Pause", forState: .Normal)
+            PlayPauseButton.setTitle("Pause", for: .normal)
         } else {
-            PlayPauseButton.setTitle("Play", forState: .Normal)
+            PlayPauseButton.setTitle("Play", for: .normal)
         }
     }
 

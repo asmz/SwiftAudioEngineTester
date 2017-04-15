@@ -2,7 +2,7 @@ AVAudioEngine effects tester by Swift
 ====
 
 ## Requirements
-Xcode 9.0 and Later.
+Xcode 8.3.1 and Later.
 
 ## Usage
 

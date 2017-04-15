@@ -22,7 +22,7 @@ class AudioEnginePlayer: NSObject {
 
     var playing: Bool {
         get {
-            return audioPlayerNode != nil && audioPlayerNode.playing
+            return audioPlayerNode != nil && audioPlayerNode.isPlaying
         }
     }
 
@@ -33,29 +33,29 @@ class AudioEnginePlayer: NSObject {
             audioEngine = AVAudioEngine()
 
             // Prepare AVAudioFile
-            let url = NSURL(string: NSBundle.mainBundle().pathForResource("sample", ofType: "mp3")!)
+            let url = URL(string: Bundle.main.path(forResource: "sample", ofType: "mp3")!)
             audioFile = try AVAudioFile(forReading: url!)
 
             // Prepare AVAudioPlayerNode
             audioPlayerNode = AVAudioPlayerNode()
-            audioEngine.attachNode(audioPlayerNode)
+            audioEngine.attach(audioPlayerNode)
 
             // Prepare AVAudioUnitTimePitch
             audioUnitTimePitch = AVAudioUnitTimePitch()
-            audioEngine.attachNode(audioUnitTimePitch)
+            audioEngine.attach(audioUnitTimePitch)
 
             // Prepare AVAudioUnitVarispeed
             audioUnitVarispeed = AVAudioUnitVarispeed()
-            audioEngine.attachNode(audioUnitVarispeed)
+            audioEngine.attach(audioUnitVarispeed)
 
             // Prepare AVAudioUnitDelay
             audioUnitDelay = AVAudioUnitDelay()
-            audioEngine.attachNode(audioUnitDelay)
+            audioEngine.attach(audioUnitDelay)
             audioUnitDelay.wetDryMix = 0
 
             // Prepare AVAudioUnitDistortion
             audioUnitDistortion = AVAudioUnitDistortion()
-            audioEngine.attachNode(audioUnitDistortion)
+            audioEngine.attach(audioUnitDistortion)
             audioUnitDistortion.wetDryMix = 0
 
             // Connect Nodes
@@ -74,7 +74,7 @@ class AudioEnginePlayer: NSObject {
 
     func play() {
         try! audioEngine.start()
-        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: {
+        audioPlayerNode.scheduleFile(audioFile, at: nil, completionHandler: {
             self.play()
         });
         audioPlayerNode.play()

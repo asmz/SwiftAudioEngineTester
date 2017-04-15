@@ -12,11 +12,11 @@
 		FE25414B1BD22BDE00408614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2541491BD22BDE00408614 /* Main.storyboard */; };
 		FE25414D1BD22BDE00408614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE25414C1BD22BDE00408614 /* Assets.xcassets */; };
 		FE2541501BD22BDE00408614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE25414E1BD22BDE00408614 /* LaunchScreen.storyboard */; };
-		FE25415A1BD22D3D00408614 /* AudioEnginePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2541591BD22D3D00408614 /* AudioEnginePlayer.swift */; settings = {ASSET_TAGS = (); }; };
-		FE25415C1BD231A500408614 /* AudioUnitVarispeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25415B1BD231A500408614 /* AudioUnitVarispeedViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FEFA6E701BD2617900A76B35 /* AudioUnitDelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E6F1BD2617900A76B35 /* AudioUnitDelayViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		FEFA6E761BD2721800A76B35 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEFA6E751BD2721800A76B35 /* sample.mp3 */; settings = {ASSET_TAGS = (); }; };
-		FEFA6E781BD2739900A76B35 /* AudioUnitDistortionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E771BD2739900A76B35 /* AudioUnitDistortionViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		FE25415A1BD22D3D00408614 /* AudioEnginePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2541591BD22D3D00408614 /* AudioEnginePlayer.swift */; };
+		FE25415C1BD231A500408614 /* AudioUnitVarispeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE25415B1BD231A500408614 /* AudioUnitVarispeedViewController.swift */; };
+		FEFA6E701BD2617900A76B35 /* AudioUnitDelayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E6F1BD2617900A76B35 /* AudioUnitDelayViewController.swift */; };
+		FEFA6E761BD2721800A76B35 /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FEFA6E751BD2721800A76B35 /* sample.mp3 */; };
+		FEFA6E781BD2739900A76B35 /* AudioUnitDistortionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFA6E771BD2739900A76B35 /* AudioUnitDistortionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,11 +105,12 @@
 		FE2541381BD22BDE00408614 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = asmz;
 				TargetAttributes = {
 					FE25413F1BD22BDE00408614 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -194,8 +195,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -238,8 +241,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,6 +263,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -270,6 +276,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = beer.asmz.SwiftAudioEngineTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -281,6 +288,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = beer.asmz.SwiftAudioEngineTester;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
