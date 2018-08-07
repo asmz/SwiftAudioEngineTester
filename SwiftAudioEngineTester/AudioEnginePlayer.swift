@@ -8,7 +8,7 @@
 
 import AVFoundation
 
-class AudioEnginePlayer: NSObject {
+class AudioEnginePlayer {
 
     static let sharedInstance = AudioEnginePlayer()
 
@@ -26,9 +26,7 @@ class AudioEnginePlayer: NSObject {
         }
     }
 
-    override init() {
-        super.init()
-
+    init() {
         do {
             audioEngine = AVAudioEngine()
 
@@ -68,7 +66,7 @@ class AudioEnginePlayer: NSObject {
             // Start Engine
             audioEngine.prepare()
         } catch {
-            print("AudioEnginePlayer initialize error.")
+            fatalError("AudioEnginePlayer initialize error.")
         }
     }
 
